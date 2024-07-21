@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css"/>
+  <title>Survey Form</title>
+</head>
+
+<body>
+
+<!-- Title and Description -->
+<div id="header">
+  <h1 id="title">Customer Feedback Form</h1>
+  <p id="description">How was your customer service experience?</p>
+</div>
+
+  <!-- Feedback Form -->
+  <form id="survey-form" method="post" action="freecodecamp.org">
+  <fieldset>
+
+    <!-- Name -->
+    <label id="name-label" for="name">First and Last Name: <input id="name" type="text" name="name" placeholder="John Smith" required /></label>
+    
+    <!-- E-mail -->
+    <label id="email-label" for="email">E-mail: <input id="email" type="email" name="email" placeholder="johnsmith@example.com" required /></label>
+    
+    <!-- Recommendation -->
+    <label id="number-label" for="number">On a scale of 1 to 5, how likely are you to recommend our service to someone? (1-Not Likely, 5-Highly Likely) <input id="number" type= "number" name="number" min="1" max="5" placeholder="5" />
+
+  </fieldset>
+
+  <!-- Time of Day Dropdown Menu -->
+  <fieldset>
+    <label>At what time of day was your experience?
+      <select id="dropdown" name="time">
+        <option value="">(select one)</option>
+        <option value="1">Morning (8AM - 12PM)</option>
+        <option value="2">Afternoon (12PM - 4PM)</option>
+        <option value="3">Evening (4PM - 8PM)</option>
+      </select>
+    </label>
+  </fieldset>
+
+  <!-- Type of Service Radio Buttons -->
+  <fieldset>
+    <legend>Type of Customer Service</legend>
+    <label for="email"><input id="email" type="radio" name="button" value="button" checked /> E-mail</label>
+    <label for="phone"><input id="phone" name="button" value="button" type="radio" /> Phone</label>
+    <label for="in-person"><input id="in-person" value="button" name="button" type="radio" /> In-Person</label>
+  </fieldset>
+
+  <!-- Checkbox buttons -->
+  <fieldset>
+    <p id="scale">On a scale of 1 to 5, how would you rate your experience with customer service? (1 - Not Good, 5 - Excellent)</p>
+    <label for="1"><input value="1" type="checkbox" name="scale" /> 1</label>
+    <label for="2"><input value="2" type="checkbox" name="scale" /> 2</label>
+    <label for="3"><input value="3" type="checkbox" name="scale" /> 3</label>
+    <label for="4"><input value="4" type="checkbox" name="scale" /> 4</label>
+    <label for="5"><input value="5" type="checkbox" name="scale" checked /> 5</label>
+  </fieldset>
+  
+  <!-- Additional Comments -->
+  <fieldset>
+    <p>Please add any additional complaints, suggestions, or comments you may have here:</p>
+    <textarea id="comments"></textarea>
+  </fieldset>
+
+  <!-- Submit Button -->
+  <fieldset id="border">
+    <button id="submit">Submit</button>
+  </fieldset> 
+  
+  </form>
+  
+</body>
+</html>
